@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="sketch.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+        <canvas id="board" width="800" height="800">
+
+        </canvas>
+
+        <!-- TODO: add a container div for the controls, below the canvas -->
+        <label for="ratioValue">R:r</label>
+        <span id="ratioValue">5 : 2</span>
+        <div id="controls">
+            <!-- TODO: add a range slider for R, with a label and a min/max/step -->
+            <label for="RRange">R</label>
+            <input type="range" min="2" max="100" value="20" id="RRange"> <span id="RValue">20</span>
+            <!-- TODO: add a range slider for r -->
+            <label for="rRange">r</label>
+            <input type="range" min="1" max="100" value="20" id="rRange"> <span id="rValue">20</span>
+            <!-- TODO: add a range slider for d -->
+            <label for="dRange">d</label>
+            <input type="range" min="1" max="100" value="20" id="dRange"> <span id="dValue">20</span>
+            <!-- TODO: add a span next to each slider to show its current value -->
+        </div>
+        <!-- TODO: add a Save PNG button -->
+        <button id="savePNGbutton">Save</button>
+    </body>
+</html>
